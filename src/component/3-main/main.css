@@ -1,0 +1,135 @@
+main.flex{
+    gap:2.64rem;
+    align-items: start;
+
+    
+
+}
+
+/* left section */
+
+main.flex .left-sec{
+    flex-direction: column;
+    gap:10px;
+}
+
+main.flex .left-sec button{
+    color: var(--tilte);    width: 11rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+
+main.flex .left-sec button.active{
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    padding: 0.8rem;
+        border: 1px solid var(--blue);
+        border-radius: 5px;
+
+}
+
+main.flex .left-sec button:hover{
+    opacity: 1;
+
+}
+
+
+/* right section */
+ 
+.card{
+    border: 1px solid   rgba(93,188,252,0.3);
+transition: 0.3s;
+border-radius: 5px;
+
+}
+
+.card img{
+   
+border-radius: 5px;
+}
+
+
+.card:hover{
+    border: 1px solid var(--blue);
+    transform: rotate(1deg);
+    scale: 1.01;
+    cursor: pointer;
+
+}
+
+
+main .right-sec{
+    /* flex-grow: 1; */
+    justify-content: center;
+    row-gap:2rem;
+    column-gap: 16px;
+        flex-wrap: wrap;
+}
+
+.card .box{
+    padding: 1rem 0.4rem;
+    background-image: linear-gradient(rgba(255,255,255,0.05),rgba(255,255,255,0.05));
+}
+
+.card .box .title{
+    color: var(--tilte);
+    text-transform: capitalize;
+}
+
+.card .box .sub-title{
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.1rem;
+    
+}
+
+.card .box .icons{
+    justify-content: space-between;
+
+}
+
+.card .icon-link,  .card .icon-github{
+    font-size: 1.2rem;
+    color: var(--subtitle);
+    transition: 0.3s;
+}
+
+.card .icon-link:hover,  .card .icon-github:hover{
+    font-size: 1.25rem;
+    color: #fff;
+    cursor: pointer;
+}
+.card a{
+    font-size: 0.9rem;
+    color: var(--blue);
+    margin-right: 12px;
+}
+
+
+
+@media screen and (max-width:600px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    main.flex .left-sec{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    main.flex .left-sec button {
+        width: 7rem;
+        padding: 0.8rem;
+        font-size: 0.9rem;
+     }
+    
+}

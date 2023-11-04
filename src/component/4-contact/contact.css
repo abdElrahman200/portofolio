@@ -1,0 +1,113 @@
+section.contact .icon-envelope-o{
+    color: var(--subtitle);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+section.contact .title{
+    font-size: 1rem;
+    color: var(--tilte);
+    margin-bottom: 1rem;
+
+}
+
+section.contact .sub-title{
+    color: var(--subtitle);
+    line-height: 1.66rem;
+    margin-bottom: 2rem;
+}
+
+section.contact label{
+    color: var(--subtitle);
+}
+
+section.contact #email ,section.contact #message {
+    all:unset;
+    background-color: rgba(63,63,70,0.15);
+    border: 1px solid rgb(63, 63, 70);
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 1.1rem;
+
+}
+
+section.contact #email:focus ,section.contact #message:focus {
+  
+    border: 1px solid rgb(45, 212, 191);
+    
+
+}
+
+section.contact #email:hover ,section.contact #message:hover{
+    border: 1px solid rgb(45, 212, 191);
+}
+section.contact #message{
+    min-height: 9rem;
+    resize: vertical;
+}
+
+section.contact .submit{
+    color: var(--tilte);   
+    margin-top: 1.2rem;
+    padding: 0.75rem 2rem;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 1px solid rgb(63, 63, 70);
+}
+
+section.contact .submit:hover{
+    scale: 0.97;
+}
+
+@media (max-width:1250px) {
+    .canimation{display: none;}
+}
+
+
+@media screen and (max-width:600px) {
+    section.contact form{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    section.contact form div.flex{
+        flex-direction: column;
+        align-items: start;
+    }
+    .animation{
+        display: none;
+    }
+    .rightSec{
+        display: none;
+    }
+
+    section.contact #email ,section.contact #message{
+        width: 100%;
+        padding: 0.7rem 0;
+        margin-left: 0;
+        margin-top: 1rem;
+
+    }
+
+    section.contact .submit{
+       width: 30%;
+       align-self: center;
+    }
+    
+    
+}
+
+
+
+
+
+
+

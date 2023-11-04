@@ -1,0 +1,65 @@
+.hero.flex{
+    flex-direction: row-reverse;
+}
+.hero .lefttSec{
+        flex-grow: 1;   
+        flex-direction: row;
+}
+.hero{margin-top: 3rem;}
+.hero .avatar{
+    width: 88px;
+
+    border-radius: 50%;
+    border: 1px solid darkorange;
+    padding: 2px;
+    box-shadow: 2px 2px 40px gray inset;
+  
+
+
+}
+
+.hero .icon-verified{
+       color: var(--blue);
+       font-size: 1.1rem;
+       margin-right: 0.6rem;
+       margin-bottom: 0.3rem;
+
+
+}
+
+.hero .parent-avatar{
+    align-items: end;
+    gap: 0.6rem;
+}
+
+/* left section */
+
+
+/* right section */
+
+.hero .title{
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+    margin: 24px 0 ;
+    color: var(--tilte)
+}
+
+.hero .subTitle{
+    color: var(--subtitle);
+    font-size: 0.8rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
+
+}
+.hero .icons{
+    font-size: 1.3rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+}
+.hero .icons .icon:hover{
+    font-size: 1.4rem;
+    transition: 0.3s;
+    cursor: pointer;
+    color:#fff
+
+}

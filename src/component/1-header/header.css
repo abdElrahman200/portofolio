@@ -1,0 +1,135 @@
+header ul.flex {
+    gap: 16px;
+}
+
+header ul li a {
+    color: var(--tilte);
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+
+header ul li a:hover {
+    color: var(--blue);
+    opacity: 1;
+    font-size: 0.9rem;
+
+}
+
+header button {
+    font-size: 1.2rem;
+}
+
+header.flex {
+    justify-content: space-between;
+    padding: 0 2.4rem;
+    margin-top: 1.2rem;
+}
+
+header nav {
+    background-color: var(--bgheader);
+    padding: 0.77rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 1px black;
+
+}
+
+header .menu {
+    display: none;
+}
+
+/* model */
+header .fixed {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    background-color: rgba(40, 40, 48, 0.91);
+}
+header  ul.model{
+    width: 85%;
+    animation: mymove 0.4s;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondry);
+}
+header  ul.model li{
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem ;
+
+
+}
+
+@keyframes mymove{
+    0%{scale: 0;}
+    60%{scale: 1.5;}
+    100%{scale: 1;}
+}
+
+header  ul.model li a{
+    font-size: 1rem;
+}
+
+header  ul.model li:last-child{
+    border: none;
+
+}
+header  ul.model li:first-child{
+    text-align: right;
+    border: none;
+    padding-bottom:0 ;
+    padding-top: 0.2rem;
+}
+/* model */
+header .meno{display: none;}
+
+@media (max-width:700px) {
+    header nav {
+        display: none;
+
+    }
+
+    header .meno {
+        display: block;
+    }
+    
+
+}
+
+/* icon button */
+header .icon-menu, header .men{
+    background-color: var(--bgheader);
+    height: 2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--subtitle);
+    border: 1px solid rgba(248, 139, 127, 0.059);
+    transition: 0.2s;
+}
+
+ header .men:hover{
+    color: white;
+    border: 1px solid rgba(250, 114, 114, 0.991);
+}
+header .icon-menu:hover{
+    color: white;
+    border: 1px solid rgba(250, 114, 114, 0.991);
+}
+header .icon-cross{
+    font-size: 1.5rem;
+    color: var(--subtitle);
+    transition: 0.3s;
+}
+
+header .icon-cross:hover{
+    font-size: 1.7rem;
+    color: crimson;
+    rotate: 180deg;
+}
